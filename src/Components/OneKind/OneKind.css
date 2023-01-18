@@ -109,3 +109,28 @@
     }
 
 }
+@media screen and (min-width:601px) and (max-width: 1024px){
+    .onekind-wrapper{
+        display:flex;
+        flex-direction:column;
+        background:rgb(253,235,210);
+        height:auto;
+        padding:1rem;
+    }
+    .title-holder{
+        text-align:center;
+        font-family:'Roboto';
+        margin-top:1%;
+    }
+    .icons-holder{
+        margin-top:2.5%;
+        display:grid;
+        grid-template: auto / 32% 32% 32%;
+        width:90%;
+        margin-left:5%;
+        grid-column-gap:30px;
+    
+        
+    }
+
+}

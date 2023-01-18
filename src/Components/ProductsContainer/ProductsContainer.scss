@@ -91,3 +91,17 @@
 
 
 }
+@media screen and (min-width:601px) and (max-width: 1024px){
+
+.productscontainer-data{
+  width:90%;
+  margin-left:5%;
+  display:grid;
+  grid-template:auto / 48% 48%;
+  grid-row-gap:30px;
+  grid-column-gap:30px;
+  padding:1rem;
+  background-color:rgb(249, 249, 249);
+}
+
+}

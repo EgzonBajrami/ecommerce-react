@@ -100,3 +100,55 @@
     }
 
 }
+@media screen and (min-width:601px) and (max-width: 1024px){
+    .checkout-items-wrapper{
+        padding:1rem;
+        display:flex;
+        flex-direction:column;
+
+        align-items:center;
+        justify-content: center;
+        border:0.1rem solid rgb(201, 198, 198);
+        border-radius:1rem;
+        margin-top:3%;
+    }
+    .checkout-items-icon{
+        width:100%;
+        height:200px;
+    }
+    .checkout-items-icon img{
+        width:100%;
+        height:auto;
+        max-width:100%;
+        max-height:100%;
+        object-fit:contain;
+        object-position:50% 50%;
+    }
+    .checkout-items-title{
+        padding:1rem;
+    }
+    .checkout-items-title p{
+        font-family:'Stencil Std', fantasy;
+        text-transform:uppercase;
+        text-align:center;
+        font-size:22px;
+      
+    }
+    .checkout-items-icons{
+        display:flex;
+        flex-direction:row;
+        flex-grow: 0;
+        align-items: center;
+        justify-content:center;
+    
+    }
+    .checkout-items-icons img{
+        height:50px;
+        width:50px;
+    }
+    .checkout-items-icons img:hover{
+        transform:scale(1.1);
+        cursor:pointer;
+    }
+
+}

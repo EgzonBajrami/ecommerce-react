@@ -129,3 +129,29 @@
     }
 
 }
+@media screen and (min-width:601px) and (max-width: 1024px){
+    .editors-wrapper{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        margin-left:0%;
+        -webkit-box-shadow: 0 0 5px gray;
+        box-shadow: 0 0 5px gray;
+        padding:1rem;
+    
+    
+    }
+    .editors-products-wrapper{
+        display:grid;
+        grid-template:auto / 48% 48%;
+        grid-row-gap:30px;
+        grid-column-gap:30px;
+      
+        margin-top:5%;
+    
+    }
+  
+
+
+}

@@ -13,6 +13,7 @@ const CheckOutCard = ({data}) =>{
     const [ccNumber, setCcNumber] = useState("");
     const [ccv, setCCV] = useState('');
     const [expiry, setExpiry] = useState('');
+    const [checking, setChecking] = useState(true);
     const formatAndSetExpiry = e => {
         const inputVal = e.target.value.replace(/ /g, ""); 
         let inputNumbersOnly = inputVal.replace(/\D/g, "/");
@@ -56,10 +57,14 @@ const CheckOutCard = ({data}) =>{
     const handleSubmit = async(e) =>{
         e.preventDefault();
         dispatch(checkOut());
+        setChecking(!checking);
     }
     
     return <>
+
+   
     <div className="checkout-card-wrapper">
+    {checking ? (<>
     <Form className="" onSubmit={handleSubmit} >
         <div className="half-it">
 
@@ -181,7 +186,11 @@ placeholder="MM/YY:"
 <Button type="submit">Submit</Button>
 </div>
   </Form>
-
+  </>):(<>
+  <div className="nothing-was-charged">
+    <p>Nothing was charged, we just deleted elements.</p>
+  </div>
+    </>)}
     </div>
     </>
 }
