@@ -1,0 +1,93 @@
+.productscontainer{
+    width:100%;
+
+    margin-top:5%;
+    
+
+}
+.productscontainer-title{
+  
+    padding:1rem;
+    width:90%;
+    margin-left:5%;
+    font-family:'Stencil Std', fantasy;
+    text-transform:uppercase;
+    text-align:center;
+    background-color:rgb(53, 52, 52);
+    color:white;
+    
+}
+.productscontainer-data{
+    width:90%;
+    margin-left:5%;
+    display:grid;
+    grid-template:auto / 23% 23% 23% 23%;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+    padding:1rem;
+    background-color:rgb(249, 249, 249);
+}
+.pagination-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+.pagination {
+   width:90%;
+   margin-left:5%;
+   display:flex;
+   justify-content: center;
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+  height:auto;
+}
+.pagination > .active > a{
+  background-color: #47ccde ;
+  border-color: #47ccde ;
+  color: #fff;
+}
+.pagination > li > a{
+  border: 1px solid #030505 ;
+  
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+  background-color: #47ccde ;
+  border-color: #47ccde;
+  outline: none ;
+}
+.pagination > li > a, .pagination > li > span{
+  color: #0c1516
+}
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span{
+  border-radius: unset
+}
+
+@media screen and (max-width:600px){
+  .productscontainer-title{
+  
+    padding:1rem;
+    width:100%;
+    margin-left:0%;
+    font-family:'Stencil Std', fantasy;
+    text-transform:uppercase;
+    text-align:center;
+    background-color:rgb(53, 52, 52);
+    color:white;
+    
+}
+.productscontainer-data{
+  width:100%;
+  margin-left:0%;
+  display:flex;
+  flex-direction:column;
+  padding:1rem;
+  background-color:rgb(249, 249, 249);
+}
+
+
+}

@@ -1,0 +1,131 @@
+.editors-wrapper{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    width:90%;
+    margin-left:5%;
+    -webkit-box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px gray;
+    padding:1rem;
+
+
+}
+.editors-wrapper h3{
+    text-align:center;
+}
+.editors-products-wrapper{
+    display:grid;
+    grid-template:auto / 23% 23% 23% 23%;
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+  
+    margin-top:5%;
+
+}
+.editors-elements-wrapper{
+    display:flex;
+    flex-direction:column;
+    margin-left:10%;
+    width:270px;
+    background-color:white;
+    -webkit-box-shadow: 0 0 5px gray;
+        box-shadow: 0 0 5px gray;
+
+}
+.editors-elements-wrapper:hover{
+    transform:scale(1.1);
+}
+.editors-image{
+    display:flex;
+    flex-direction:column;
+    
+    width:270px;
+    height:270px;
+}
+.editors-image img{
+    width:270px;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    object-position:50% 50%;
+}
+.products-title{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.products-title p{
+    font-family:'Roboto';
+    font-size:22px;
+    font-weight:bold;
+ 
+
+}
+.products-price{
+    position:absolute;
+    background-color:white;
+    display:none;
+    justify-content: center;
+    width:50px;
+    height:30px;
+    border-radius:1rem;
+    margin-top:45%;
+    margin-left:10%;
+}
+.products-price p{
+   font-family:'Roboto';
+
+}
+.editors-elements-wrapper:hover   .products-cart{
+    transform:scale(1.1);
+    display: flex;
+    
+}
+.editors-elements-wrapper:hover .products-price{
+    transform:scale(1.1);
+    display:flex;
+}
+.products-cart{
+    position:absolute;
+    background-color:white;
+    border-radius:1rem;
+    display:none;
+    margin-left:80%;
+    width:50px;
+    height:30px;
+    z-index:3;
+}
+.products-cart img{
+    width:100%;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+}
+
+@media screen and (max-width:600px){
+    .editors-wrapper{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        margin-left:0%;
+        -webkit-box-shadow: 0 0 5px gray;
+        box-shadow: 0 0 5px gray;
+        padding:1rem;
+    
+    
+    }
+    .editors-products-wrapper{
+       display:flex;
+       flex-direction:column;
+       
+      
+        margin-top:5%;
+    
+    }
+
+}

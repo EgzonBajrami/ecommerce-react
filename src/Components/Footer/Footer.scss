@@ -1,0 +1,26 @@
+.footer-wrapper{
+    width:100%;
+    margin-top:10%;
+    height:auto;
+    background-color:rgb(253,235,210);
+    display:grid;
+    grid-template:auto / 33% 33% 33%;
+}
+.community{
+
+ 
+   
+    margin-top:10%;
+
+}
+.title-holder h3{
+    font-weight:bold;
+    text-align: center;
+}
+.community p{
+    padding:1rem;
+    text-align:center;
+    font-weight:600;
+    font-family:'Roboto';
+    font-size:18px;
+}

@@ -1,0 +1,15 @@
+.reviews-similar{
+    display:grid;
+    grid-template:auto / 68% 28%;
+    grid-column-gap:30px;
+}
+
+@media screen and (max-width:600px){
+    
+    .reviews-similar{
+        display:flex;
+        flex-direction:column;
+    }
+    
+
+}

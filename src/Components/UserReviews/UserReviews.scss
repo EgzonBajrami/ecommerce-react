@@ -1,0 +1,49 @@
+.ratings-wrapper{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+
+}
+.margin-card{
+    margin-top:2%;
+}
+.ratings-data-wrapper{
+    padding:1rem;
+}
+.ratings-name{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.user-icon{
+    display:flex;
+    flex-direction:row;
+    height:50px;
+    width:100px;
+
+ 
+}
+.user-icon p{
+    padding-left:1rem;
+    width:100px;
+    font-family:'Roboto';
+    font-size:18px;
+}
+.user-icon img{
+    border:1px solid gray;
+    border-radius: 50%;
+    width:auto;
+    height:auto;
+    max-width:50%;
+    max-height:100%;
+    object-fit:contain;
+    object-position:50% 50%;
+
+}
+.ratings-paragraph{
+    padding:1rem;
+ }
+ .ratings-paragraph p{
+    padding-top:2rem;
+ }
+ 

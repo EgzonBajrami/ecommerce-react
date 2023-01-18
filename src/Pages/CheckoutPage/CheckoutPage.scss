@@ -1,0 +1,36 @@
+.checkout-main{
+  width:90%;
+  margin-left:5%;
+  margin-top:5%;
+
+}
+.checkout-title{
+  
+    padding:1rem;
+    width:100%;
+  
+    margin-top:10%;
+    font-family:'Stencil Std', fantasy;
+    text-transform:uppercase;
+    text-align:center;
+    background-color:rgb(53, 52, 52);
+    color:white;
+}
+
+.checkout-wrapper{
+    display:grid;
+    grid-template: auto / 50% 50%;
+}
+@media screen and (max-width:600px){
+  .checkout-main{
+    width:100%;
+    margin-left:0%;
+    margin-top:20%;
+  
+  }
+  .checkout-wrapper{
+    display:flex;
+    flex-direction:column;
+  }
+
+}
