@@ -94,6 +94,11 @@ const FormControl = () => {
               value={section}>
                  <option>Section:</option>
                 <option value='Furniture'>Furniture & Organization</option>
+                <option value='Engagement'>Engagement & WEDDING GIFTS</option>
+                <option value='Hoodies'>Hoodies & Sweaters</option>
+                <option value='Jewelry'>Unique Jewelry</option>
+                <option value='MakeUp'>Make Up</option>
+                <option value='Shoes'>Unique Shoes</option>
 
                 </CFormSelect>
                 </div>
