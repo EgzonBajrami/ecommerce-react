@@ -4,7 +4,11 @@ import Typography from '@mui/material/Typography';
 import {useState} from 'react';
 import {useDispatch} from 'react-redux';
 import {add} from '../../Lib/store/slices/cart.js'
+import {useSelector} from 'react-redux';
+
 const SingleProduct = ({data}) =>{
+    const auth = useSelector((state)=>state.auth.data);
+
     const dispatch = useDispatch();
     const [value, setValue] = useState(data.totalScore)
     const [dis, setDisabled] = useState(false);
@@ -51,6 +55,13 @@ const SingleProduct = ({data}) =>{
       
 
             </div>
+            {(auth!==null)&&(<>
+            {
+                auth.role==='ADMIN' &&(<>
+                <p>{data._id}</p>
+                </>)
+            }
+            </>)}
             <div className={btnclass} disabled={dis}>
                 <button onClick={handleButtonClick}>{addToCart}</button>
             </div>

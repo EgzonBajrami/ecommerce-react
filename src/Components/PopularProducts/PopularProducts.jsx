@@ -33,7 +33,7 @@ const PopularProducts = () =>{
             <h3>Popular gifts right now</h3>
         </div>
       
-      <ul ref={ref}>
+      <ul className="change-ul" ref={ref}>
       {data &&data.map((elem)=>(
          
               <div className="editors-elements-wrapper" 

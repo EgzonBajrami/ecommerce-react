@@ -12,7 +12,7 @@ import {
 
   CRow,
 } from '@coreui/react'
-
+import './FormChosen.css'
 import {api,endpoints} from '../../../Lib/Api';
 import { getHeaderStructure } from '../../../Lib/helper';
 import {useSelector} from 'react-redux';
@@ -70,14 +70,16 @@ const FormChosen = () =>{
 
     }
     return <>
+      <div className="move-tops">
     {editor? (
         <>
         {
             res ? (<>
-           
+         
+            
                <CRow>
     <CCard className="mb-4">
-      <CCardHeader>
+      <CCardHeader className="move-tops">
         <strong>Add it to editors choice</strong>
       </CCardHeader>
       <CCardBody>
@@ -102,6 +104,8 @@ const FormChosen = () =>{
         </CCard>
                 
             </CRow>
+            
+          
             </>)
         }
         </>
@@ -146,6 +150,7 @@ const FormChosen = () =>{
        </CCard>
        </CRow>
        )}
+       </div>
     </>
 }
 export default FormChosen;

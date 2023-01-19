@@ -13,7 +13,7 @@ import {
   CFormSelect,
   CRow,
 } from '@coreui/react'
-
+import './FormControl.css';
 import {api,endpoints} from '../../../Lib/Api';
 import { getHeaderStructure } from '../../../Lib/helper';
 import {useSelector} from 'react-redux';
@@ -44,7 +44,8 @@ const FormControl = () => {
     console.log(result);
   }
   return <>
-  <CRow>
+
+  <CRow className="move-tops">
     <CCard className="mb-4">
       <CCardHeader>
         <strong>Add a product</strong>
